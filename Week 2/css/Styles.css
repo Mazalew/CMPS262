@@ -1,0 +1,36 @@
+p {
+  font-family: Georgia, "Times New Roman", Times, sherif;
+  font-size: 1em;
+}
+
+h2 {
+  font-family: "Century Schoolbook", Georgia, Times, sherif;
+  font-size: 2em;
+  color: #0953e8;
+}
+
+li {
+  font-family: Georgia;
+  font-size: .8em;
+  color: darkgreen;
+}
+
+div#Top {
+  background-color: #b4e7f0;
+}
+
+div#Interests_Classes {
+  background-color: #ffcf9c;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+div#Contact {
+  background-color: #ff5e5e;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
