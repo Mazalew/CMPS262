@@ -38,16 +38,19 @@ div#Contact {
 div#navbar ul{
   list-style-type: none;
   text-align: center;
-  word-spacing: 1.3em;
 }
 
 div#navbar li {
-  font-size: 1.2em;
+  font-family: "Franklin Gothic Medium Cond", "Times New Roman";
+  font-size: 2.2em;
   display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-div#Table {
+div#Table table{
   background-color: green;
+  
 }
 
 table, td, th {
