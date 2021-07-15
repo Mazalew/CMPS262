@@ -3,6 +3,20 @@ p {
   font-size: 1em;
 }
 
+p#WIP {
+  font-family: Georgia, "Times New Roman";
+  font-size: 3em;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+p#WIPTXT {
+  font-family: Georgia, "Times New Roman";
+  font-size: 2em;
+  text-align: center;
+}
+
 h2 {
   font-family: "Century Schoolbook", Georgia, Times, sherif;
   font-size: 2em;
@@ -13,6 +27,14 @@ li {
   font-family: Georgia;
   font-size: .8em;
   color: darkgreen;
+}
+
+img.Construction {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 500px;
 }
 
 div#Top {
@@ -37,7 +59,8 @@ div#Contact {
 
 div#navbar ul{
   list-style-type: none;
-  text-align: center;
+  text-align: left;
+  
 }
 
 div#navbar li {
@@ -48,9 +71,21 @@ div#navbar li {
   margin-right: 10px;
 }
 
-div#Table table{
+th#Fruit {
+  background-color: red;
+}
+
+td#Veg {
+  background-color: lightgreen;
+}
+
+td#Fruit {
+  background-color: lightpink;
+  padding-right: 1.1em;
+}
+
+th#Veg {
   background-color: green;
-  
 }
 
 table, td, th {
