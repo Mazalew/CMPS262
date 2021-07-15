@@ -34,3 +34,24 @@ div#Contact {
   padding-top: 1px;
   padding-bottom: 1px;
 }
+
+div#navbar ul{
+  list-style-type: none;
+  text-align: center;
+  word-spacing: 1.3em;
+}
+
+div#navbar li {
+  font-size: 1.2em;
+  display: inline;
+}
+
+div#Table {
+  background-color: green;
+}
+
+table, td, th {
+  font-size: 2em;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
