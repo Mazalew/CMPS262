@@ -2,19 +2,29 @@ $(document).ready(function() {
 
   $("#Home").click(function () {
     $("#Table_Page").hide();
+    $("#Styles_Page").hide();
     $("#Animation_Page").hide();
     $("#Homepage").show();
   });
 
   $("#Table").click(function () {
     $("#Homepage").hide();
+    $("#Styles_Page").hide();
     $("#Animation_Page").hide();
     $("#Table_Page").show();
+  });
+
+  $("#Styles").click(function () {
+    $("#Homepage").hide();
+    $("#Table_Page").hide();
+    $("#Animation_Page").hide();
+    $("#Styles_Page").show();
   });
 
   $("#Animation").click(function () {
     $("#Homepage").hide();
     $("#Table_Page").hide();
+    $("#Styles_Page").hide();
     $("#Animation_Page").show();
   });
 
@@ -29,6 +39,31 @@ $(document).ready(function() {
     }
   });
 
+  $("#submit").click(function () {
+    if ($('#FontChoice1').is(':checked')) {
+
+      $("#Styles_Page_Text").css("font-family", "Times New Roman");
+    }
+    if ($('#FontChoice2').is(':checked')) {
+      $("#Styles_Page_Text").css("font-family", "Georgia");
+    }
+    if ($('#FontChoice3').is(':checked')) {
+      $("#Styles_Page_Text").css("font-family", "Century Schoolbook");
+    }
+
+
+    if ($('#Number').val() === undefined) {
+      $('#Number').val() = 1;
+    }
+    var size = $("#Number").val() + "em";
+    $("#Styles_Page_Text").css("font-size", size);
+
+
+
+  });
+
+//Using the script you used in your lab video.  Don't feel too confident with CSS enough yet to
+//expiement too much with animating much more.
   function rgt() {
     $("#bird").animate({ left: "250"}, 10000, hider);
   }
@@ -36,9 +71,5 @@ $(document).ready(function() {
   function hider() {
     $("#bird").css("left", "0px");
       rgt();
-  }
-
-  if ( $("#bird").position().left <= 100) {
-    $("#test").text('$("#bird").position();');
   }
 });

@@ -16,7 +16,7 @@ p#WIPTXT {
   font-family: Georgia, "Times New Roman";
   font-size: 2em;
   text-align: center;
-}*
+}*/
 
 h2 {
   font-family: "Century Schoolbook", Georgia, Times, sherif;
@@ -104,7 +104,7 @@ table, td, th {
   border-collapse: collapse;
 }
 
-#Table_Page, #Animation_Page {
+#Table_Page, #Animation_Page, #Styles_Page{
   display: none;
 }
 
