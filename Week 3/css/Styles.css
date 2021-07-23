@@ -3,7 +3,28 @@ p {
   font-size: 1em;
 }
 
+p#Fonts_Text, p#Number_Text {
+  font-weight: bold;
+}
+
+button {
+  background-color: lightblue;
+  border-radius: 8px;
+  border:2px solid Daylight;
+  font-size: 16px;
+  padding: 8px 15px;
+  color: Black;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #73081c;
+  color: lightblue;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 /*
+This is currently not in place anymore
+
 p#WIP {
   font-family: Georgia, "Times New Roman";
   font-size: 3em;
@@ -70,7 +91,6 @@ div#Contact {
 div#navbar ul{
   list-style-type: none;
   text-align: left;
-
 }
 
 div#navbar li {
@@ -79,6 +99,33 @@ div#navbar li {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+label#FontChoice1L {
+  font-family: "Times New Roman";
+}
+
+label#FontChoice2L {
+  font-family: Georgia;
+  font-size:1.4em;
+}
+label#FontChoice3L {
+  font-family: "Century Schoolbook";
+}
+
+label {
+  font-size:1.3em;
+  Color: grey;
+}
+
+a#Recomended_Color {
+  Color: red;
+}
+
+select {
+  background: #bfbfbf;
+  font-size: 15px;
+  border-radius: 5px;
 }
 
 th#Fruit {
