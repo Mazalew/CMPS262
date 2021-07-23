@@ -41,7 +41,6 @@ $(document).ready(function() {
 
   $("#submit").click(function () {
     if ($('#FontChoice1').is(':checked')) {
-
       $("#Styles_Page_Text").css("font-family", "Times New Roman");
     }
     if ($('#FontChoice2').is(':checked')) {
@@ -59,7 +58,19 @@ $(document).ready(function() {
     $("#Styles_Page_Text").css("font-size", size);
 
 
-
+    if ($('#Selection_Colors').val() === ('Red')) {
+      $("#Styles_Page_Text").css("color", "red");
+    }
+    if ($('#Selection_Colors').val() === ('Blue')) {
+      $("#Styles_Page_Text").css("color", "blue");
+    }
+    if ($('#Selection_Colors').val() === ('Green')) {
+      $("#Styles_Page_Text").css("color", "green");
+    }
+    if ($('#Selection_Colors').val() === ('Orange')) {
+      $("#Styles_Page_Text").css("color", "orange");
+    }
+    return false;
   });
 
 //Using the script you used in your lab video.  Don't feel too confident with CSS enough yet to

@@ -88,14 +88,14 @@
       <div id="Styles_Page">
         <p id="Styles_Page_Text">Here is some sample text to play around with the styles.</p>
 
-        <form action="# " id="form">
+        <form id="form">
           <p id="Fonts_Text"> Fonts </p>
 
           <div id="Fonts">
-            <input type="radio" id="FontChoice1" name="Font" value='on'>
+            <input type="radio" id="FontChoice1" name="Font">
             <label for="FontChoice1">Times New Roman</label>
 
-            <input type="radio" id="FontChoice2" name="Font" value='on'>
+            <input type="radio" id="FontChoice2" name="Font">
             <label for="FontChoice2">Georgia</label>
 
             <input type="radio" id="FontChoice3" name="Font">
@@ -107,9 +107,19 @@
             <input type="number" id="Number">
           </div>
 
+          <br></br>
+
           <div id="Select_Colors">
+            <select name=Colors id=Selection_Colors>
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+              <option value="Orange">Orange</option>
+            </select>
           </div>
-          
+
+          <br></br>
+
           <div id="Submit">
             <button type="submit" id="submit">Submit</button>
           </div>
