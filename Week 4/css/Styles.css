@@ -1,0 +1,41 @@
+button {
+  background-color: white;
+  border-radius: 8px;
+  border:2px solid;
+  font-size: 16px;
+  padding: 15px 22px 15px 22px;
+  color: Black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #81838f;
+  color: lightblue;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+header {
+  font-Family: Georgia, "Times New Roman";
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  background-color: #aec9f5;
+}
+
+#img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#image_button_area {
+  background-color: #6b7fe3;
+}
+
+#Next {
+  margin-left: 313px;
+}
+
+#Prev {
+  margin-left: 700px;
+}
