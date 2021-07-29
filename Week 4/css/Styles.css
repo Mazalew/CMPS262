@@ -1,0 +1,160 @@
+p {
+  font-family: Georgia, "Times New Roman", Times, sherif;
+  font-size: 1em;
+}
+
+p#Fonts_Text, p#Number_Text {
+  font-weight: bold;
+}
+
+button {
+  background-color: lightblue;
+  border-radius: 8px;
+  border:2px solid Daylight;
+  font-size: 16px;
+  padding: 8px 15px;
+  color: Black;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #73081c;
+  color: lightblue;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*
+This is currently not in place anymore
+
+p#WIP {
+  font-family: Georgia, "Times New Roman";
+  font-size: 3em;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+p#WIPTXT {
+  font-family: Georgia, "Times New Roman";
+  font-size: 2em;
+  text-align: center;
+}*/
+
+h2 {
+  font-family: "Century Schoolbook", Georgia, Times, sherif;
+  font-size: 2em;
+  color: #0953e8;
+}
+
+li {
+  font-family: Georgia;
+  font-size: .8em;
+  color: darkgreen;
+}
+
+/*
+This is currently not in place anymore
+
+img.Construction {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 500px;
+}
+*/
+
+a#IMG_SHOW_HIDE {
+  font-family: Georgia, "Times New Roman";
+  color: red;
+}
+
+div#Top {
+  background-color: #b4e7f0;
+}
+
+div#Interests_Classes {
+  background-color: #ffcf9c;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+div#Contact {
+  background-color: #ff5e5e;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+div#navbar ul{
+  list-style-type: none;
+  text-align: left;
+}
+
+div#navbar li {
+  font-family: "Franklin Gothic Medium Cond", "Times New Roman";
+  font-size: 2.2em;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+label#FontChoice1L {
+  font-family: "Times New Roman";
+}
+
+label#FontChoice2L {
+  font-family: Georgia;
+  font-size:1.4em;
+}
+label#FontChoice3L {
+  font-family: "Century Schoolbook";
+}
+
+label {
+  font-size:1.3em;
+  Color: grey;
+}
+
+a#Recomended_Color {
+  Color: red;
+}
+
+select {
+  background: #bfbfbf;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+th#Fruit {
+  background-color: red;
+}
+
+th#Veg {
+  background-color: green;
+}
+
+td#Veg {
+  background-color: lightgreen;
+}
+
+td#Fruit {
+  background-color: lightpink;
+  padding-right: 1.1em;
+}
+
+table, td, th {
+  font-size: 2em;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#Table_Page, #Animation_Page, #Styles_Page{
+  display: none;
+}
+
+#bird {
+  position: absolute;
+}
