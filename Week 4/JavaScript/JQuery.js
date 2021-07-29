@@ -98,34 +98,66 @@ $(document).ready(function() {
 
 //The following is for the buttons under the portfolio page.
   $("#Next").click(function () {
-    next($('img').attr('src'));
+    next($('#img').attr('src'));
   });
 
   $("#Prev").click(function () {
-    previous($('img').attr('src'));
+    previous($('#img').attr('src'));
   });
 
 function next(current) {
-  if (current === "img/Homepage.jpg") {
-    fade('img/What.png');
+  if (current === "img/Playlist.jpg") {
+    fade('img/Discord-Music-Program_01.jpg');
+    $('#img').addClass("long");
+    $('#img').removeClass("default");
   }
-  if (current === "img/What.png") {
-    fade('img/win 10 background.png');
+  if (current === "img/Discord-Music-Program_01.jpg") {
+    fade('img/Discord-Music-Program_02.jpg');
   }
-  if (current === "img/win 10 background.png") {
-    fade('img/Homepage.jpg');
+  if (current === "img/Discord-Music-Program_02.jpg") {
+    fade('img/Discord-Music-Program_03.jpg');
+    $('#img').addClass("default");
+    $('#img').removeClass("long");
+  }
+  if (current === "img/Discord-Music-Program_03.jpg") {
+    fade('img/Discord-Music-Program_04.jpg');
+  }
+  if (current === "img/Discord-Music-Program_04.jpg") {
+    fade('img/Discord-Music-Program_05.jpg');
+  }
+  if (current === "img/Discord-Music-Program_05.jpg") {
+    fade('img/Discord-Music-Program_06.jpg');
+  }
+  if (current === "img/Discord-Music-Program_06.jpg") {
+    fade('img/Playlist.jpg');
   }
 };
 
 function previous(current) {
-  if (current === "img/Homepage.jpg") {
-  fade("img/win 10 background.png");
+  if (current === "img/Playlist.jpg") {
+    fade('img/Discord-Music-Program_06.jpg');
   }
-  if (current === "img/What.png") {
-    fade('img/Homepage.jpg');
+  if (current === "img/Discord-Music-Program_01.jpg") {
+    fade('img/Playlist.jpg');
+    $('#img').addClass("default");
+    $('#img').removeClass("long");
   }
-  if (current === "img/win 10 background.png") {
-    fade('img/What.png');
+  if (current === "img/Discord-Music-Program_02.jpg") {
+    fade('img/Discord-Music-Program_01.jpg');
+  }
+  if (current === "img/Discord-Music-Program_03.jpg") {
+    fade('img/Discord-Music-Program_02.jpg');
+    $('#img').addClass("long");
+    $('#img').removeClass("default");
+  }
+  if (current === "img/Discord-Music-Program_04.jpg") {
+    fade('img/Discord-Music-Program_03.jpg');
+  }
+  if (current === "img/Discord-Music-Program_05.jpg") {
+    fade('img/Discord-Music-Program_04.jpg');
+  }
+  if (current === "img/Discord-Music-Program_06.jpg") {
+    fade('img/Discord-Music-Program_05.jpg');
   }
 }
 
