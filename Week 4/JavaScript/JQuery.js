@@ -114,7 +114,7 @@ $(document).ready(function() {
 
   $("#Stock").click(function () {
     fade('img/Stocks.jpg')
-    toStock();
+    toDefault();
     $('p#Project_Desc').text('This was one of my first large scale programs and... oh boy... it took a long time to make and a lot of frustration was had making it.  Overall I am happy the way it came out with the little knowledge I had.  Sadly it does not work anymore since the way it was formatted relied on coordinates and the locations changed.  Still a great work to look at.  I will say there are a lot of images for this project and I will try to describe everything as this is over 2-3 years old now.');
   });
 
@@ -155,6 +155,7 @@ function next(current) {
 //Stocks Part
   if (current === "img/Stocks.jpg") {
     fade('img/Stocks_Program_01.jpg');
+    toStock();
     var text = "And here we are the main code of the whole procedure.  Anything under the 'robot' package is a class I custom made and we will go into later.  The rest of the imports are Java's and I just utilized them.  We start off with assigning the classes to be objects so they can be used later.  There is also a list of tickers I used to watch for one reason or another.  The JFrame part is setup early and is used to get an input later.  Continue to the next image."
     $('p#Project_Desc').text(text);
   }
@@ -220,6 +221,7 @@ function next(current) {
   }
   if (current === "img/Stocks_Program_13.jpg") {
     fade('img/Stocks.jpg');
+    toDefault();
     var text = "This was one of my first large scale programs and... oh boy... it took a long time to make and a lot of frustration was had making it.  Overall I am happy the way it came out with the little knowledge I had.  Sadly it does not work anymore since the way it was formatted relied on coordinates and the locations changed.  Still a great work to look at.  I will say there are a lot of images for this project and I will try to describe everything as this is over 2-3 years old now."
     $('p#Project_Desc').text(text);
   }
@@ -262,11 +264,13 @@ function previous(current) {
 //Stocks part
   if (current === "img/Stocks.jpg") {
     fade('img/Stocks_Program_13.jpg');
+    toStock();
     var text = "And we are at the final stop of the tour.  Here are some more Firefox functions.  Search_Bar just goes to the search bar and presses it.  Search_String uses the same code as Search_Bar (not sure why I just didn't call it) and searches a string.  Open_and_Search_String has a similar process but it opens Firefox.";
     $('p#Project_Desc').text(text);
   }
   if (current === "img/Stocks_Program_01.jpg") {
     fade('img/Stocks.jpg');
+    toDefault();
     var text = "This was one of my first large scale programs and... oh boy... it took a long time to make and a lot of frustration was had making it.  Overall I am happy the way it came out with the little knowledge I had.  Sadly it does not work anymore since the way it was formatted relied on coordinates and the locations changed.  Still a great work to look at.  I will say there are a lot of images for this project and I will try to describe everything as this is over 2-3 years old now."
     $('p#Project_Desc').text(text);
   }

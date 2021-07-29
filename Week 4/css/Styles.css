@@ -99,6 +99,7 @@ div#navbar ul , .Option {
 .Option {
   display: inline-flex;
   margin-right: 10px;
+  position: static;
 }
 
 button.Option {
@@ -188,10 +189,12 @@ img.default {
   height: 500px;
   width: 700px;
 }
+
 img.long {
   height: 1000px;
   width: 700px;
 }
+
 img.Stock {
   height: auto;
   width: auto;
@@ -214,7 +217,7 @@ img.Stock {
 
 #image_button_area {
   background-color: #6b7fe3;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   margin-bottom: -21px;
 }
 
@@ -228,6 +231,10 @@ img.Stock {
   cursor: pointer;
 }
 
+#Next:hover, #Prev:hover {
+  background-color: #b3b4b5;
+}
+
 #Next {
   margin-left: 360px;
 }
@@ -237,11 +244,31 @@ img.Stock {
 }
 
 #Description {
+  padding-top: 2px;
   Background-color: #0799ba;
 }
 
 #Project_Desc {
+  margin-top: -14px;
   font-size: 1.3em;
-  padding-top: 20px;
   padding-bottom: 20px;
+}
+
+#Music {
+  margin-left: 600px;
+}
+
+#Stock {
+  margin-left: 180px;
+}
+
+#buttonPTxt {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+#Descrip {
+  margin-top: 10px;
+  font-size: 1.6em;
+  text-align: center;
 }
