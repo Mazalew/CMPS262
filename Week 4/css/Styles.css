@@ -192,6 +192,10 @@ img.long {
   height: 1000px;
   width: 700px;
 }
+img.Stock {
+  height: auto;
+  width: auto;
+}
 
 #Table_Page, #Animation_Page, #Styles_Page, #Portfolio_Page{
   padding-top: 29px;
