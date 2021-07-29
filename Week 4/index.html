@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage MZalewski</title>
+    <meta charset="utf-8">
+    <script src="JavaScript/jquery-3.3.1.min.js"></script>
+    <script src="JavaScript/JQuery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/Styles.css">
+  </head>
+  <body>
+    <div id=navbar>
+      <ul>
+        <li><button id="Home">Home</button></li>
+        <li><button id="Table">Table</button></li>
+        <li><button id="Styles">Styles</button></li>
+        <li><button id="Animation">Animation</button></li>
+        <li><button id="Portfolio">Portfolio</button></li>
+      </ul>
+    </div>
+    <div id="All">
+      <div id="Homepage">
+        <div id="Top">
+          <h2>Michael Zalewski</h2>
+          <img src="img/Expo Photo.png" width="500" height="380.5" id="Me"> </img>
+          <div id="Image_Hidden_Space" hidden> <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br></div>
+          <p> Click <a href="javaScript:void(0)" id="IMG_SHOW_HIDE"> HERE</a> to make the image appear or disappear </p>
+        </div>
+        <div id="Interests_Classes">
+          <b id="Interests"> Interests </b>
+          <ul>
+            <li>Indie Games</li>
+            <ul>
+              <li>Dead by Daylight</li>
+              <li>Payday 2</li>
+              <li>Stardew Valley</li>
+            </ul>
+            <p>These are a few on top of my head.</p>
+            <li>Music</li>
+            <ul>
+              <li>Blink-182</li>
+              <li>Twenty One Pilots</li>
+              <li>Imagine Dragons</li>
+              <li>AJR</li>
+              <li>Jeremy Zucker</li>
+            </ul>
+            <p></p> <!-- Keeping the same format. -->
+            <li>YouTube - I watch almost anything from gaming videos to true crime/unsolved mysteries to podcasts/skits.</li>
+          </ul>
+          <b>Fall 2021 Classes</b>
+          <ul>
+            <li>CMPS 361 - Web App Development</li>
+            <li>CMPS 161 - Network and Security</li>
+            <li>BMGT 338 - Operations Management/QA</li>
+            <li>CMPS 363 - Digital Security</li>
+          </ul>
+        </div>
+        <div id="Contact">
+          <p>I can be contacted at the following: Email: mazalew@pointpark.edu or <a href="https://www.linkedin.com/in/michael-zalewski-5bb66a200/">LinkedIn</a></p>
+        </div>
+      </div>
+
+      <div id="Table_Page">
+        <div id="Table">
+          <table>
+            <tr>
+              <th scope="col" id="Fruit">Fruits</th>
+              <th scope="col" id="Veg">Vegetables</th>
+            </tr>
+            <tr>
+              <td id="Fruit">Apples</td>
+              <td id="Veg">Carrots</td>
+            </tr>
+            <tr>
+              <td id="Fruit">Bananas</td>
+              <td id="Veg">Onions</td>
+            </tr>
+            <tr>
+              <td id="Fruit">Oranges</td>
+              <td id="Veg">Potatoes</td>
+            </tr>
+            <tr>
+              <td id="Fruit">Pears</td>
+              <td id="Veg">Collard Greens</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="Styles_Page">
+        <p id="Styles_Page_Text">Here is some sample text to play around with the styles.</p>
+
+        <form id="form">
+          <p id="Fonts_Text"> Fonts </p>
+
+          <div id="Fonts">
+            <input type="radio" id="FontChoice1" name="Font">
+            <label for="FontChoice1" id="FontChoice1L">Times New Roman</label>
+
+            <input type="radio" id="FontChoice2" name="Font">
+            <label for="FontChoice2" id="FontChoice2L">Georgia</label>
+
+            <input type="radio" id="FontChoice3" name="Font">
+            <label for="FontChoice3" id="FontChoice3L">Century Schoolbook</label>
+          </div>
+
+          <div id="Size">
+            <p id="Number_Text"> Enter a number to change the size of the text.  <a id="Recomended_Color"> Recomended below 5.</a></p>
+            <input type="number" id="Number">
+          </div>
+
+          <br></br>
+
+          <div id="Select_Colors">
+            <select name=Colors id=Selection_Colors>
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+              <option value="Orange">Orange</option>
+            </select>
+          </div>
+
+          <br></br>
+
+          <div id="Submit">
+            <button type="submit" id="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="Animation_Page">
+        <img src="img/flying.gif" id="bird"></img>
+      </div>
+      <div id="Portfolio_Page">
+        <div id="Top">
+          <header> Portfolio </header>
+          <p>Click the buttons below to load some images and a discription of my other works</p>
+          <ul>
+            <li><button id="Homepage" class="Option">Homepage</button></li>
+            <li><button id="Music Selector" class="Option">Custom Music Playlist Maker</button></li>
+        </div>
+        <div id="image_button_area">
+          <img src="img/Homepage.jpg" id="img" height="500" width="500">
+          </img>
+          <div id="buttons">
+            <button id="Prev">Previous</button>
+            <button id="Next">Next</button>
+          </div>
+        </div>
+        <div id="Description">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
