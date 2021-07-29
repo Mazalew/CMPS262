@@ -108,56 +108,67 @@ $(document).ready(function() {
 function next(current) {
   if (current === "img/Playlist.jpg") {
     fade('img/Discord-Music-Program_01.jpg');
-    $('#img').addClass("long");
-    $('#img').removeClass("default");
+    toLong();
+    $('p#Project_Desc').text('Here we can see the main code.  What the program does in a nutshell is open a file and delete all contents contained within it.  It will keep getting random number and check if that song has already been recomended.  If not, it will add it to the list.');
   }
   if (current === "img/Discord-Music-Program_01.jpg") {
     fade('img/Discord-Music-Program_02.jpg');
   }
   if (current === "img/Discord-Music-Program_02.jpg") {
     fade('img/Discord-Music-Program_03.jpg');
-    $('#img').addClass("default");
-    $('#img').removeClass("long");
+    toDefault();
+    $('p#Project_Desc').text('This is the prompt when the program is ran.');
   }
   if (current === "img/Discord-Music-Program_03.jpg") {
     fade('img/Discord-Music-Program_04.jpg');
+    $('p#Project_Desc').text('This is what the current note looks like before the program is ran.');
   }
   if (current === "img/Discord-Music-Program_04.jpg") {
     fade('img/Discord-Music-Program_05.jpg');
+    $('p#Project_Desc').text('For this example I entered the max, 49.');
   }
   if (current === "img/Discord-Music-Program_05.jpg") {
     fade('img/Discord-Music-Program_06.jpg');
+    $('p#Project_Desc').text('Now the note is filled with a bunch of songs I can copy to YouTube or Discord.');
   }
   if (current === "img/Discord-Music-Program_06.jpg") {
     fade('img/Playlist.jpg');
-  }
+    var text = "This was a smaller project I did back when Youtube had a hard time with longer playlists.  The main goal was to make a program that shuffles a bunch of music I like and give me the url's.  Although, I also wanted to use this for a bot in Discord so, as you will see later, that is where the '>play' comes in.  That was the prefix and command for the bot to play a song.  Continue to the next image.";
+    $('p#Project_Desc').text(text);
+    }
 };
 
 function previous(current) {
   if (current === "img/Playlist.jpg") {
     fade('img/Discord-Music-Program_06.jpg');
+    $('p#Project_Desc').text('Now the note is filled with a bunch of songs I can copy to YouTube or Discord.');
   }
   if (current === "img/Discord-Music-Program_01.jpg") {
     fade('img/Playlist.jpg');
-    $('#img').addClass("default");
-    $('#img').removeClass("long");
+    toDefault();
+    var text = "This was a smaller project I did back when Youtube had a hard time with longer playlists.  The main goal was to make a program that shuffles a bunch of music I like and give me the url's.  Although, I also wanted to use this for a bot in Discord so, as you will see later, that is where the '>play' comes in.  That was the prefix and command for the bot to play a song.  Continue to the next image.";
+    $('p#Project_Desc').text(text);
   }
   if (current === "img/Discord-Music-Program_02.jpg") {
     fade('img/Discord-Music-Program_01.jpg');
+
   }
   if (current === "img/Discord-Music-Program_03.jpg") {
     fade('img/Discord-Music-Program_02.jpg');
-    $('#img').addClass("long");
-    $('#img').removeClass("default");
+    toLong();
+    $('p#Project_Desc').text('Here we can see the main code.  What the program does in a nutshell is open a file and delete all contents contained within it.  It will keep getting random number and check if that song has already been recomended.  If not, it will add it to the list.');
   }
   if (current === "img/Discord-Music-Program_04.jpg") {
     fade('img/Discord-Music-Program_03.jpg');
+    $('p#Project_Desc').text('This is the prompt when the program is ran.');
   }
   if (current === "img/Discord-Music-Program_05.jpg") {
     fade('img/Discord-Music-Program_04.jpg');
+    $('p#Project_Desc').text('This is what the current note looks like before the program is ran.');
   }
   if (current === "img/Discord-Music-Program_06.jpg") {
     fade('img/Discord-Music-Program_05.jpg');
+    $('p#Project_Desc').text('For this example I entered the max, 49.');
   }
 }
 
@@ -166,5 +177,15 @@ function fade (img) {
     $('#img').attr('src', img);
     $("#img").fadeIn(400)
   });
+}
+
+function toLong() {
+  $('#img').addClass("long");
+  $('#img').removeClass("default");
+}
+
+function toDefault() {
+  $('#img').addClass("default");
+  $('#img').removeClass("long");
 }
 });

@@ -210,6 +210,8 @@ img.long {
 
 #image_button_area {
   background-color: #6b7fe3;
+  padding-bottom: 20px;
+  margin-bottom: -21px;
 }
 
 #Next, #Prev {
@@ -223,9 +225,19 @@ img.long {
 }
 
 #Next {
-  margin-left: 313px;
+  margin-left: 360px;
 }
 
 #Prev {
-  margin-left: 620px;
+  margin-left: 670px;
+}
+
+#Description {
+  Background-color: #0799ba;
+}
+
+#Project_Desc {
+  font-size: 1.3em;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
