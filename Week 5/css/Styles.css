@@ -1,0 +1,286 @@
+p {
+  font-family: Georgia, "Times New Roman", Times, sherif;
+  font-size: 1em;
+}
+
+p#Fonts_Text, p#Number_Text {
+  font-weight: bold;
+}
+
+button {
+  background-color: lightblue;
+  border-radius: 8px;
+  border:2px solid;
+  font-size: 16px;
+  padding: 8px 15px;
+  color: Black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #73081c;
+  color: lightblue;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*
+This is currently not in place anymore
+
+p#WIP {
+  font-family: Georgia, "Times New Roman";
+  font-size: 3em;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+p#WIPTXT {
+  font-family: Georgia, "Times New Roman";
+  font-size: 2em;
+  text-align: center;
+}*/
+
+h2 {
+  font-family: "Century Schoolbook", Georgia, Times, sherif;
+  font-size: 2.5em;
+  color: #0953e8;
+}
+
+li {
+  font-family: Georgia;
+  font-size: .8em;
+  color: darkgreen;
+}
+
+/*
+This is currently not in place anymore
+
+img.Construction {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 500px;
+}
+*/
+
+a#IMG_SHOW_HIDE {
+  font-family: Georgia, "Times New Roman";
+  color: red;
+}
+
+div#Top_Home {
+  background-color: #b4e7f0;
+  margin-top: 25px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+}
+
+div#Top_Port {
+  background-color: #b4e7f0;
+  margin-top: -2px;
+  padding-bottom: 10px;
+}
+
+div#Interests_Classes {
+  background-color: #ffcf9c;
+  margin-top: -16px;
+  margin-bottom: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+div#Contact {
+  background-color: #ff5e5e;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+div#navbar ul , .Option {
+  list-style-type: none;
+  text-align: left;
+}
+
+.Option {
+  display: inline-flex;
+  margin-right: 10px;
+  position: static;
+}
+
+button.Option {
+  background-color: #9d9d9e;
+}
+
+button.Option:hover {
+  background-color: #b9b9bd;
+  color: black;
+}
+
+div#navbar li{
+  font-family: "Franklin Gothic Medium Cond", "Times New Roman";
+  font-size: 2.2em;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+label#FontChoice1L {
+  font-family: "Times New Roman";
+}
+
+label#FontChoice2L {
+  font-family: Georgia;
+  font-size:1.4em;
+}
+label#FontChoice3L {
+  font-family: "Century Schoolbook";
+}
+
+label {
+  font-size:1.3em;
+  Color: grey;
+}
+
+a#Recomended_Color {
+  Color: red;
+}
+
+select {
+  background: #bfbfbf;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+th#Fruit {
+  background-color: red;
+}
+
+th#Veg {
+  background-color: green;
+}
+
+td#Veg {
+  background-color: lightgreen;
+}
+
+td#Fruit {
+  background-color: lightpink;
+  padding-right: 1.1em;
+}
+
+table, td, th {
+  font-size: 2em;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+header {
+  font-Family: Georgia, "Times New Roman";
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  background-color: #aec9f5;
+}
+
+div#navbar {
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: -27px;
+  margin-top: -15px;
+}
+
+img.default {
+  height: 500px;
+  width: 700px;
+}
+
+img.long {
+  height: 1000px;
+  width: 700px;
+}
+
+img.Stock {
+  height: auto;
+  width: auto;
+}
+
+#Table_Page, #Animation_Page, #Styles_Page, #Portfolio_Page, #NYT_Page {
+  padding-top: 29px;
+  display: none;
+}
+
+#bird {
+  position: absolute;
+}
+
+#img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#image_button_area {
+  background-color: #b4e7f0;
+  padding-bottom: 40px;
+  margin-bottom: -21px;
+}
+
+#Next, #Prev {
+  background-color: #aec9f5;
+  border-radius: 8px;
+  border:2px solid;
+  font-size: 16px;
+  padding: 15px 22px 15px 22px;
+  color: Black;
+  cursor: pointer;
+}
+
+#Next:hover, #Prev:hover {
+  background-color: #b3b4b5;
+}
+
+#Next {
+  margin-left: 360px;
+}
+
+#Prev {
+  margin-left: 670px;
+}
+
+#Description {
+  padding-top: 2px;
+  Background-color: #0799ba;
+}
+
+#Project_Desc {
+  margin-top: -30px;
+  font-size: 1.7em;
+  padding-bottom: 20px;
+}
+
+#Music {
+  margin-left: 600px;
+}
+
+#Stock {
+  margin-left: 180px;
+}
+
+#buttonPTxt {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+#Descrip {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+#Interests_Classes, #img_diss_text, #Contact {
+  font-size: 1.4em;
+}
