@@ -19,6 +19,12 @@
         <li><button id="API_Section">API's</button></li>
       </ul>
     </div>
+    <div id="API_Dropdown">
+      <ul>
+        <li><button id="API_Info_Page_Button">API Info</button></li>
+        <li><button id="NYT_Page_Button">New York Times Lab Example</button></li>
+      </ul>
+    </div>
     <div id="All">
       <div id="Homepage">
         <div id="Top_Home">
@@ -161,12 +167,16 @@
       <div id="NYT_Page">
         Search on News Articles:</br>
         <input type="text" name="name" id="NYT_Article_txt"></br>
+        <button type="button" id="PrevNYT">Prev Article</button>
         <button type="button" id="NYT_Search_Submit">Search/Query</button>
+        <button type="button" id="NextNYT">Next Article</button></br>
+        Press Search/Query after pressing next or previous to bring up the next article.
         <div id="NYT_Article">
-          <h1 id = "NYT_Headline"></h1></br>
-          <p id = "NYT_Snippet"></p>
-          <p id = "NYT_leadPara"></p>
-          <a id = "NYT_URL" target="_blank"></a>
+          <h1 id="NYT_Headline"></h1></br>
+          <p id="NYT_Author"></p>
+          <p id="NYT_Snippet"></p>
+          <p id="NYT_leadPara"></p>
+          <a id="NYT_URL" target="_blank"></a>
         </div>
       </div>
     </div>

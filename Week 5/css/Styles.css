@@ -98,7 +98,7 @@ div#Contact {
   padding-bottom: 1px;
 }
 
-div#navbar ul , .Option {
+div#navbar ul , .Option div#API_Dropdown ul{
   list-style-type: none;
   text-align: left;
 }
@@ -118,7 +118,7 @@ button.Option:hover {
   color: black;
 }
 
-div#navbar li{
+div#navbar li, div#API_Dropdown li{
   font-family: "Franklin Gothic Medium Cond", "Times New Roman";
   font-size: 2.2em;
   display: inline;
@@ -184,7 +184,7 @@ header {
   background-color: #aec9f5;
 }
 
-div#navbar {
+div#navbar, #API_Dropdown{
   background-color: black;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -207,7 +207,7 @@ img.Stock {
   width: auto;
 }
 
-#Table_Page, #Animation_Page, #Styles_Page, #Portfolio_Page, #NYT_Page {
+#Table_Page, #Animation_Page, #Styles_Page, #Portfolio_Page, #NYT_Page, #NYT_Page2, #API_Dropdown{
   padding-top: 29px;
   display: none;
 }

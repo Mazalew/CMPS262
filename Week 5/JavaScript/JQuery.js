@@ -44,12 +44,7 @@ $(document).ready(function() {
     $("#Portfolio_Page").show();
   });
   $("#API_Section").click(function () {
-    $("#Homepage").hide();
-    $("#Table_Page").hide();
-    $("#Styles_Page").hide();
-    $("#Animation_Page").hide();
-    $("#Portfolio_Page").hide();
-    $("#NYT_Page").show();
+    $("#API_Dropdown").slideDown('slow');
   });
 
   $("#IMG_SHOW_HIDE").click(function () {
