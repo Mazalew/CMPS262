@@ -23,6 +23,7 @@
       <ul>
         <li><button id="API_Info_Page_Button">API Info</button></li>
         <li><button id="NYT_Page_Button">New York Times Lab Example</button></li>
+        <li><button id="YT_Page_Button">YouTube API</button></li>
       </ul>
     </div>
     <div id="All">
@@ -165,18 +166,31 @@
         </div>
       </div>
       <div id="NYT_Page">
-        Search on News Articles:</br>
+        <div id='NYT_Top'>
+        <p id="NYT_Search_Text_Info">Search News Articles:</p></br>
         <input type="text" name="name" id="NYT_Article_txt"></br>
-        <button type="button" id="PrevNYT">Prev Article</button>
-        <button type="button" id="NYT_Search_Submit">Search/Query</button>
-        <button type="button" id="NextNYT">Next Article</button></br>
-        Press Search/Query after pressing next or previous to bring up the next article.
+        <button type="button" id="PrevNYT" class="NYTButton">Prev Article</button>
+        <button type="button" id="NYT_Search_Submit" class="NYTButton">Search/Query</button>
+        <button type="button" id="NextNYT" class="NYTButton">Next Article</button></br>
+        <p id="NYT_Button_Info">Press Search/Query after pressing next or previous to bring up the next article.</p>
+        <p id='CurArticle'>Current Article: 1</p>
+      </br></br>
+        </div>
         <div id="NYT_Article">
           <h1 id="NYT_Headline"></h1></br>
-          <p id="NYT_Author"></p>
-          <p id="NYT_Snippet"></p>
-          <p id="NYT_leadPara"></p>
+          <p id="NYT_Author" class='NYT_Text'></p>
+          <p id="NYT_Snippet" class='NYT_Text'></p>
+          <p id="NYT_leadPara" class='NYT_Text'></p>
           <a id="NYT_URL" target="_blank"></a>
+        </div>
+      </div>
+      <div id="YouTube_Page">
+        <div id="YT_Top">
+          <p id="YT_Search_Text_Info">Search Video:</p></br>
+          <input type="text" name="name" id="YT_Video_Search_txt"></br>
+          <button type="button" id="PrevYT" class="YTButton">Prev Video</button>
+          <button type="button" id="YT_Search_Submit" class="YTButton">Search</button>
+          <button type="button" id="NextYT" class="YTButton">Next video</button></br>
         </div>
       </div>
     </div>

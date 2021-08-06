@@ -207,7 +207,7 @@ img.Stock {
   width: auto;
 }
 
-#Table_Page, #Animation_Page, #Styles_Page, #Portfolio_Page, #NYT_Page, #NYT_Page2, #API_Dropdown{
+#Table_Page, #Animation_Page, #Styles_Page, #Portfolio_Page, #NYT_Page, #NYT_Page2, #API_Dropdown, #YouTube_API{
   padding-top: 29px;
   display: none;
 }
@@ -283,4 +283,45 @@ img.Stock {
 
 #Interests_Classes, #img_diss_text, #Contact {
   font-size: 1.4em;
+}
+
+.NYTButton {
+  background-color: #ffedf5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.NYTButton:hover {
+  background-color: #a1a1a1;
+  color:black;
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 6px 25px 0 rgba(0,0,0,0.19);
+}
+
+.NYT_Text {
+  font-size: 1.1em;
+}
+
+#NYT_Search_Text_Info, #CurArticle, #NYT_Button_Info {
+  font-size: 1.3em;
+  margin-bottom:-10px;
+}
+
+#NYT_Button_Info {
+  margin-bottom: 10px;
+}
+
+#NYT_Top, #YT_Top {
+  margin-top: -5px;
+  padding-top: 20px;
+  background-color: #f7eacd;
+}
+#NYT_Article {
+  margin-top:-30px;
+  background-color: #d9abb9;
+}
+
+#YT_Top {
+  color: #e6e6e6;
+  font-weight: bold;
+  background-color: #6e0021;
 }

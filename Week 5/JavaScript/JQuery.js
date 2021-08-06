@@ -6,6 +6,8 @@ $(document).ready(function() {
     $("#Animation_Page").hide();
     $("#Portfolio_Page").hide();
     $("#NYT_Page").hide();
+    $("#API_Dropdown").hide();
+    $("#YouTube_Page").hide();
     $("#Homepage").show();
   });
 
@@ -15,6 +17,8 @@ $(document).ready(function() {
     $("#Animation_Page").hide();
     $("#Portfolio_Page").hide();
     $("#NYT_Page").hide();
+    $("#API_Dropdown").hide();
+    $("#YouTube_Page").hide();
     $("#Table_Page").show();
   });
 
@@ -24,6 +28,8 @@ $(document).ready(function() {
     $("#Animation_Page").hide();
     $("#Portfolio_Page").hide();
     $("#NYT_Page").hide();
+    $("#API_Dropdown").hide();
+    $("#YouTube_Page").hide();
     $("#Styles_Page").show();
   });
 
@@ -33,6 +39,8 @@ $(document).ready(function() {
     $("#Styles_Page").hide();
     $("#Portfolio_Page").hide();
     $("#NYT_Page").hide();
+    $("#API_Dropdown").hide();
+    $("#YouTube_Page").hide();
     $("#Animation_Page").show();
   });
   $("#Portfolio").click(function () {
@@ -41,10 +49,37 @@ $(document).ready(function() {
     $("#Styles_Page").hide();
     $("#Animation_Page").hide();
     $("#NYT_Page").hide();
+    $("#API_Dropdown").hide();
+    $("#YouTube_Page").hide();
     $("#Portfolio_Page").show();
   });
   $("#API_Section").click(function () {
-    $("#API_Dropdown").slideDown('slow');
+    if ($('#API_Dropdown').is(':hidden')){
+      $("#API_Dropdown").slideDown('slow');
+    }
+    else {
+      $("#API_Dropdown").slideUp('slow');
+    }
+  });
+  $("#NYT_Page_Button").click(function () {
+    $("#Homepage").hide();
+    $("#Table_Page").hide();
+    $("#Styles_Page").hide();
+    $("#Animation_Page").hide();
+    $("#Portfolio_Page").hide();
+    $("#API_Dropdown").hide();
+    $("#YouTube_Page").hide();
+    $("#NYT_Page").show();
+  });
+  $("#YT_Page_Button").click(function () {
+    $("#Homepage").hide();
+    $("#Table_Page").hide();
+    $("#Styles_Page").hide();
+    $("#Animation_Page").hide();
+    $("#Portfolio_Page").hide();
+    $("#API_Dropdown").hide();
+    $("#NYT_Page").hide();
+    $("#YouTube_Page").show();
   });
 
   $("#IMG_SHOW_HIDE").click(function () {
@@ -68,7 +103,6 @@ $(document).ready(function() {
     if ($('#FontChoice3').is(':checked')) {
       $("#Styles_Page_Text").css("font-family", "Century Schoolbook");
     }
-
 
     if ($('#Number').val() === undefined) {
       $('#Number').val() = 1;
