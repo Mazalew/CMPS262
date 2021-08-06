@@ -6,6 +6,7 @@
     <script src="JavaScript/jquery-3.3.1.min.js"></script>
     <script src="JavaScript/JQuery.js"></script>
     <script src="JavaScript/NYT_JQuery.js"></script>
+    <script src="JavaScript/YT_API.js"></script>
     <link rel="stylesheet" type="text/css" href="css/Styles.css">
   </head>
   <body>
@@ -172,7 +173,6 @@
         <button type="button" id="PrevNYT" class="NYTButton">Prev Article</button>
         <button type="button" id="NYT_Search_Submit" class="NYTButton">Search/Query</button>
         <button type="button" id="NextNYT" class="NYTButton">Next Article</button></br>
-        <p id="NYT_Button_Info">Press Search/Query after pressing next or previous to bring up the next article.</p>
         <p id='CurArticle'>Current Article: 1</p>
       </br></br>
         </div>
@@ -191,6 +191,12 @@
           <button type="button" id="PrevYT" class="YTButton">Prev Video</button>
           <button type="button" id="YT_Search_Submit" class="YTButton">Search</button>
           <button type="button" id="NextYT" class="YTButton">Next video</button></br>
+          <p id ="YT_video_num">Video Number: 1</p>
+        </div>
+        <div id="YT_Video_div">
+          <h1 id="YT_Video_Title"></h1>
+          <p id="YT_Channel"></p>
+          <img id="YT_Video_Thumbnail"></img>
         </div>
       </div>
     </div>

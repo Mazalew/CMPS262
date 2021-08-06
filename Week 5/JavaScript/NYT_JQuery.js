@@ -19,6 +19,8 @@ $("#NextNYT").click(function () {
   if (article_num < 9){
     article_num++;
     $('#CurArticle').text('Current Article: ' + (article_num + 1));
+    var url = urlbase_Article + query + keyword + '&' + apikeyidentity + apikey;
+    Example(url);
   }
   else (
     alert("Only 10 articles are available at a time.")
@@ -29,6 +31,8 @@ $("#PrevNYT").click(function () {
   if (article_num > 0) {
     article_num--;
     $('#CurArticle').text('Current Article: ' + (article_num + 1));
+    var url = urlbase_Article + query + keyword + '&' + apikeyidentity + apikey;
+    Example(url);
   }
   else {
     alert("There is no article before this one.");

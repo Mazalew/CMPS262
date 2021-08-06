@@ -301,13 +301,9 @@ img.Stock {
   font-size: 1.1em;
 }
 
-#NYT_Search_Text_Info, #CurArticle, #NYT_Button_Info {
+#NYT_Search_Text_Info, #CurArticle {
   font-size: 1.3em;
   margin-bottom:-10px;
-}
-
-#NYT_Button_Info {
-  margin-bottom: 10px;
 }
 
 #NYT_Top, #YT_Top {
