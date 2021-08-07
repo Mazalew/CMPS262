@@ -100,6 +100,9 @@ $(document).ready(function() {
     $("#NYT_Page").hide();
     $("#YouTube_Page").show();
   });
+  $("#Last_YouTube_Video").click(function () {
+    window.open('youtube.html');
+  })
 
   $("#IMG_SHOW_HIDE").click(function () {
     if ( $("#Me").is(":visible")) {
