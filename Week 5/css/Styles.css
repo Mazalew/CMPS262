@@ -104,6 +104,7 @@ div#navbar ul , .Option div#API_Dropdown ul{
 }
 
 .Option {
+  list-style-type: none;
   display: inline-flex;
   margin-right: 10px;
   position: static;
@@ -207,7 +208,7 @@ img.Stock {
   width: auto;
 }
 
-#Table_Page, #Animation_Page, #Styles_Page, #Portfolio_Page, #NYT_Page, #NYT_Page2, #API_Dropdown, #YouTube_API{
+#Table_Page, #Animation_Page, #Styles_Page, #Portfolio_Page, #NYT_Page, #NYT_Page2, #API_Dropdown, #YouTube_Page, #API_Info_Page{
   padding-top: 29px;
   display: none;
 }
@@ -216,7 +217,7 @@ img.Stock {
   position: absolute;
 }
 
-#img {
+#img, #API_Img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -228,7 +229,7 @@ img.Stock {
   margin-bottom: -21px;
 }
 
-#Next, #Prev {
+.ProjButton {
   background-color: #aec9f5;
   border-radius: 8px;
   border:2px solid;
@@ -320,4 +321,25 @@ img.Stock {
   color: #e6e6e6;
   font-weight: bold;
   background-color: #6e0021;
+}
+
+#API_Info_Page {
+  margin-top: 27px;
+  background-color: #f5f4d7;
+}
+
+#API_Info_TitleHead {
+  margin-left: 825px;
+  margin-top: -15px;
+  font-size: 2.6em;
+}
+
+.API_Info_Head {
+  font-size: 1.8em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.API_Info_P {
+  font-size: 1.4em;
 }

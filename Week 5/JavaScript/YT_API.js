@@ -11,7 +11,7 @@ $(document).ready(function() {
 });
 
 $("#NextYT").click(function () {
-  if (video_num < 25){
+  if (video_num < 5){
     video_num++;
     $('#YT_video_num').text('Video Number: ' + (video_num + 1));
     searchYouTube();
@@ -41,7 +41,7 @@ function searchYouTube () {
       key:'AIzaSyACOtPtfcuTcQa3PQ3NDm08FEldhbXUC88',
       q: $('#YT_Video_Search_txt').val(),
       part: 'snippet',
-      maxResults: 25,
+      maxResults: 5,
       pageToken: pageToken.current
     }
   }).done(function(data){

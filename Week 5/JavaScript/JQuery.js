@@ -7,6 +7,7 @@ $(document).ready(function() {
     $("#Portfolio_Page").hide();
     $("#NYT_Page").hide();
     $("#API_Dropdown").hide();
+    $("#API_Info_Page").hide();
     $("#YouTube_Page").hide();
     $("#Homepage").show();
   });
@@ -18,6 +19,7 @@ $(document).ready(function() {
     $("#Portfolio_Page").hide();
     $("#NYT_Page").hide();
     $("#API_Dropdown").hide();
+    $("#API_Info_Page").hide();
     $("#YouTube_Page").hide();
     $("#Table_Page").show();
   });
@@ -29,6 +31,7 @@ $(document).ready(function() {
     $("#Portfolio_Page").hide();
     $("#NYT_Page").hide();
     $("#API_Dropdown").hide();
+    $("#API_Info_Page").hide();
     $("#YouTube_Page").hide();
     $("#Styles_Page").show();
   });
@@ -40,6 +43,7 @@ $(document).ready(function() {
     $("#Portfolio_Page").hide();
     $("#NYT_Page").hide();
     $("#API_Dropdown").hide();
+    $("#API_Info_Page").hide();
     $("#YouTube_Page").hide();
     $("#Animation_Page").show();
   });
@@ -50,6 +54,7 @@ $(document).ready(function() {
     $("#Animation_Page").hide();
     $("#NYT_Page").hide();
     $("#API_Dropdown").hide();
+    $("#API_Info_Page").hide();
     $("#YouTube_Page").hide();
     $("#Portfolio_Page").show();
   });
@@ -61,6 +66,18 @@ $(document).ready(function() {
       $("#API_Dropdown").slideUp('slow');
     }
   });
+  $("#API_Info_Page_Button").click(function () {
+    $("#Homepage").hide();
+    $("#Table_Page").hide();
+    $("#Styles_Page").hide();
+    $("#Animation_Page").hide();
+    $("#Portfolio_Page").hide();
+    $("#API_Dropdown").hide();
+    $("#YouTube_Page").hide();
+    $("#NYT_Page").hide();
+    $("#YouTube_Page").hide();
+    $("#API_Info_Page").show();
+  });
   $("#NYT_Page_Button").click(function () {
     $("#Homepage").hide();
     $("#Table_Page").hide();
@@ -68,6 +85,7 @@ $(document).ready(function() {
     $("#Animation_Page").hide();
     $("#Portfolio_Page").hide();
     $("#API_Dropdown").hide();
+    $("#API_Info_Page").hide();
     $("#YouTube_Page").hide();
     $("#NYT_Page").show();
   });
@@ -78,6 +96,7 @@ $(document).ready(function() {
     $("#Animation_Page").hide();
     $("#Portfolio_Page").hide();
     $("#API_Dropdown").hide();
+    $("#API_Info_Page").hide();
     $("#NYT_Page").hide();
     $("#YouTube_Page").show();
   });
@@ -402,4 +421,5 @@ function toStock() {
   $('#img').removeClass("default");
   $('#img').removeClass("long");
 }
+
 });
