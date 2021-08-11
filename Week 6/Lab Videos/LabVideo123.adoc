@@ -1,0 +1,29 @@
+# Food Pantry Application
+
+:FOODPANTRY_APP: Food Pantry
+:FOODPANTRY_LOC: Wood St
+:FOODPANTRY_ENV: Staging
+:FOODPANTRY_URL: https://pioneerpantry.org
+:FOODPANTRY_STATUS: Available
+:FOODPANTRY_VERSION: 1.0.1
+:imagesdir: img
+
+## What is the Food Pantry Site
+It's a location to track ...
+
+## What mobile operating systems does the Pantry reside on
+It's available both IOS and Android
+
+## What platform was the app developed on
+- Version 1.0 was developed on Cordova Platform
+- Version 1.1 was developed on IOS native framework
+- Version 1.1 was developed on Android native framework
+
+## What programming languages were utilized
+- HTML, CSS, JQuery
+[grid="rows",format="csv"]
+[options="header",cols="^,<,<s,<,>m"]
+|==========================
+App,Location,Enviornment,URL,Status,Version
+`{FOODPANTRY_APP}`,`{FOODPANTRY_LOC}`,`{FOODPANTRY_ENV}`,`{FOODPANTRY_URL}`,`{FOODPANTRY_STATUS}`,`{FOODPANTRY_VERSION}`
+|==========================
