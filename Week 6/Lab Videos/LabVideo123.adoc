@@ -32,4 +32,4 @@ App,Location,Enviornment,URL,Status,Version
 `{FOODPANTRY_APP}`,`{FOODPANTRY_LOC}`,`{FOODPANTRY_ENV}`,`{FOODPANTRY_URL}`,`{FOODPANTRY_STATUS}`,`{FOODPANTRY_VERSION}`
 |==========================
 
-image::win 10 background.png[alt=test,width=250px][orientation=portrait]
+image::cookie.jpg[alt=test,width=250px][orientation=portrait]
