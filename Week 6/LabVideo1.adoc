@@ -1,3 +1,12 @@
 # Food Pantry Application
 
 ## What is the Food Pantry Site
+It's a location to track ...
+
+## What mobile operating systems does the Pantry reside on
+It's available both IOS and Android
+
+##What platform was the app developed on
+- Version 1.0 was developed on Cordova Platform
+- Version 1.1 was developed on IOS native framework
+- Version 1.1 was developed on Android native framework
