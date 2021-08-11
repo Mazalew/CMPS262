@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage MZalewski</title>
+    <meta charset="utf-8">
+    <script src="JavaScript/jquery-3.3.1.min.js"></script>
+    <script src="JavaScript/JQuery.js"></script>
+    <script src="JavaScript/NYT_JQuery.js"></script>
+    <script src="JavaScript/YT_API.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/Styles.css">
+  </head>
+  <body>
+    <div id=navbar>
+      <ul>
+        <li><button id="Home">Home</button></li>
+        <li><button id="Table">Table</button></li>
+        <li><button id="Styles">Styles</button></li>
+        <li><button id="Animation">Animation</button></li>
+        <li><button id="Portfolio">Portfolio</button></li>
+        <li><button id="API_Section">API's</button></li>
+        <li><button id="Last_YouTube_Video">Last YT Video</button></li>
+      </ul>
+    </div>
+    <div id="API_Dropdown">
+      <ul>
+        <li><button id="API_Info_Page_Button">API Info</button></li>
+        <li><button id="NYT_Page_Button">New York Times Lab Example</button></li>
+        <li><button id="YT_Page_Button">YouTube API</button></li>
+      </ul>
+    </div>
+    <div id="All">
+      <div id="Homepage">
+        <div id="Top_Home">
+          <h2>Michael Zalewski</h2>
+          <img src="img/Expo Photo.png" width="500" height="380.5" id="Me"> </img>
+          <div id="Image_Hidden_Space" hidden> <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br></div>
+          <p id="img_diss_text"> Click <a href="javaScript:void(0)" id="IMG_SHOW_HIDE"> HERE</a> to make the image appear or disappear </p>
+        </div>
+        <div id="Interests_Classes">
+          <b id="Interests"> Interests </b>
+          <ul>
+            <li>Indie Games</li>
+            <ul>
+              <li>Dead by Daylight</li>
+              <li>Payday 2</li>
+              <li>Stardew Valley</li>
+            </ul>
+            <p>These are a few on top of my head.</p>
+            <li>Music</li>
+            <ul>
+              <li>Blink-182</li>
+              <li>Twenty One Pilots</li>
+              <li>Imagine Dragons</li>
+              <li>AJR</li>
+              <li>Jeremy Zucker</li>
+            </ul>
+            <p></p> <!-- Keeping the same format. -->
+            <li>YouTube - I watch almost anything from gaming videos to true crime/unsolved mysteries to podcasts/skits.</li>
+          </ul>
+          <b>Fall 2021 Classes</b>
+          <ul>
+            <li>CMPS 361 - Web App Development</li>
+            <li>CMPS 161 - Network and Security</li>
+            <li>BMGT 338 - Operations Management/QA</li>
+            <li>CMPS 363 - Digital Security</li>
+          </ul>
+        </div>
+        <div id="Contact">
+          <p>I can be contacted at the following: Email: mazalew@pointpark.edu or <a href="https://www.linkedin.com/in/michael-zalewski-5bb66a200/">LinkedIn</a></p>
+        </div>
+      </div>
+
+      <div id="Table_Page">
+        <div id="Table">
+          <table>
+            <tr>
+              <th scope="col" id="Fruit">Fruits</th>
+              <th scope="col" id="Veg">Vegetables</th>
+            </tr>
+            <tr>
+              <td id="Fruit">Apples</td>
+              <td id="Veg">Carrots</td>
+            </tr>
+            <tr>
+              <td id="Fruit">Bananas</td>
+              <td id="Veg">Onions</td>
+            </tr>
+            <tr>
+              <td id="Fruit">Oranges</td>
+              <td id="Veg">Potatoes</td>
+            </tr>
+            <tr>
+              <td id="Fruit">Pears</td>
+              <td id="Veg">Collard Greens</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="Styles_Page">
+        <p id="Styles_Page_Text">Here is some sample text to play around with the styles.</p>
+
+        <form id="form">
+          <p id="Fonts_Text"> Fonts </p>
+
+          <div id="Fonts">
+            <input type="radio" id="FontChoice1" name="Font">
+            <label for="FontChoice1" id="FontChoice1L">Times New Roman</label>
+
+            <input type="radio" id="FontChoice2" name="Font">
+            <label for="FontChoice2" id="FontChoice2L">Georgia</label>
+
+            <input type="radio" id="FontChoice3" name="Font">
+            <label for="FontChoice3" id="FontChoice3L">Century Schoolbook</label>
+          </div>
+
+          <div id="Size">
+            <p id="Number_Text"> Enter a number to change the size of the text.  <a id="Recomended_Color"> Recomended below 5.</a></p>
+            <input type="number" id="Number">
+          </div>
+
+          <br></br>
+
+          <div id="Select_Colors">
+            <select name=Colors id=Selection_Colors>
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+              <option value="Orange">Orange</option>
+            </select>
+          </div>
+
+          <br></br>
+
+          <div id="Submit">
+            <button type="submit" id="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="Animation_Page">
+        <img src="img/flying.gif" id="bird"></img>
+      </div>
+      <div id="Portfolio_Page">
+        <div id="Top_Port">
+          <header> Portfolio </header>
+          <p id="buttonPTxt">Click the buttons below to load some images and a description of my other works</p>
+          <ul class="Option">
+            <li><button id="Music" class="Option">Custom Music Playlist Maker</button></li>
+            <li><button id="Stock" class="Option">Stocks Program</button></li>
+          </ul>
+        </div>
+        <div id="image_button_area">
+          <img src="img/Playlist.jpg" id="img" class="default"></img>
+          <div id="buttons">
+            <button id="Prev" class="ProjButton">Previous</button>
+            <button id="Next" class="ProjButton">Next</button>
+          </div>
+        </div>
+        <div id="Description">
+          <p id="Descrip">Description </p>
+          <p id="Project_Desc">
+            This was a smaller project I did back when Youtube had a hard time with longer playlists.  The main goal was to make a program that
+            shuffles a bunch of music I like and give me the url's.  Although, I also wanted to use this for a bot in Discord so, as you will see later,
+            that is where the '>play' comes in.  That was the prefix and command for the bot to play a song.  Continue to the next image.
+          </p>
+        </div>
+      </div>
+      <div id="API_Info_Page">
+        <h1 id="API_Info_TitleHead">About API's</h1>
+        <h4 id="API_Info_Head4-1" class="API_Info_Head">What are API's?</h4>
+        <p id="API_Info_P1" Class="API_Info_P">
+          The word API is an abreviation for Application Programming Interface.  Its main purpose is to either send or receive data from another server to your
+          application or use.
+        </p>
+        <h4 id="API_Info_Head4-2" class="API_Info_Head">What are the different versions of API's?</h4>
+        <p id="API_Info_P2" Class="API_Info_P">
+          There are two different versions: RESTful and Soap.  RESTful is the more modern approach.  It stands for Representational State Transfer.  It relies
+          on client-server protocall and treats server objects as objects that can be created or destroyed.  RESTful API's have the ability to GET, PUT, POST, and DELETE information.
+          Soap on the otherhand is still used by developers today, but is less common compared to RESTful.  Soap retrives a XML document that contains the envelope, header, body, and fault.
+          Soap can insert, update, delete, or select information from a database.
+        </p>
+        <h4 id="API_Info_Head4-3" class="API_Info_Head">What does it look like?</h4>
+        <p id="API_Info_P3" Class="API_Info_P">
+          Below is a image of what an API request looks like for a client and server.
+        </p>
+        <img id="API_Img" src="img/API_Ex.png" height=700 width=1500></img>
+      </div>
+      <div id="NYT_Page">
+        <div id='NYT_Top'>
+        <p id="NYT_Search_Text_Info">Search News Articles:</p></br>
+        <input type="text" name="name" id="NYT_Article_txt"></br>
+        <button type="button" id="PrevNYT" class="NYTButton">Prev Article</button>
+        <button type="button" id="NYT_Search_Submit" class="NYTButton">Search/Query</button>
+        <button type="button" id="NextNYT" class="NYTButton">Next Article</button></br>
+        <p id='CurArticle'>Current Article: 1</p>
+      </br></br>
+        </div>
+        <div id="NYT_Article">
+          <h1 id="NYT_Headline"></h1></br>
+          <p id="NYT_Author" class='NYT_Text'></p>
+          <p id="NYT_Snippet" class='NYT_Text'></p>
+          <p id="NYT_leadPara" class='NYT_Text'></p>
+          <a id="NYT_URL" target="_blank"></a>
+        </div>
+      </div>
+      <div id="YouTube_Page">
+        <div id="YT_Top">
+          <p id="YT_Search_Text_Info">Search Video:</p></br>
+          <input type="text" name="name" id="YT_Video_Search_txt"></br>
+          <button type="button" id="PrevYT" class="YTButton">Prev Video</button>
+          <button type="button" id="YT_Search_Submit" class="YTButton">Search</button>
+          <button type="button" id="NextYT" class="YTButton">Next video</button></br>
+          <p id ="YT_video_num">Video Number: 1</p>
+        </div>
+        <div id="YT_Video_div">
+          <h1 id="YT_Video_Title"></h1>
+          <p id="YT_Channel"></p>
+          <img id="YT_Video_Thumbnail"></img>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
