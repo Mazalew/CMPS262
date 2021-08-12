@@ -17,7 +17,7 @@ $("#NextYT").click(function () {
     searchYouTube();
   }
   else (
-    alert("Only 25 videos are available at a time.")
+    alert("Only 5 videos are available at a time.")
   )
 });
 

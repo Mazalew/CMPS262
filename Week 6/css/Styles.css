@@ -343,3 +343,13 @@ img.Stock {
 .API_Info_P {
   font-size: 1.4em;
 }
+
+#YT_Site_Body {
+  font-size: 3em;
+  background-color: #781822;
+  text-align: center;
+}
+
+#YT_Site_Main {
+  background-color: #961b28;
+}
