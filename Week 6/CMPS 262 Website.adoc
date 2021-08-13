@@ -13,6 +13,21 @@
 This webpage is used to learn the fundimentals of web development.  Most of the site is contained within the index.html file with the exception of 
 YouTube.html which is used for getting the most current video up on my YouTube channel for this class.
 
+## Site Divisions Explanation
+Homepage - Contains general information about me, my interests, my future classes, and ways to contact me.  A general opener to the website.
+
+Table - Just a test page to display a table.
+
+Styles - Another test page to mess around with different fonts, colors, and text size.
+
+Animation - A test page for animations using JQuery/JavaScript.
+
+Portfolio - This part of the page showcases some other projects I did in other programming languages.
+
+API's - This is split into three sections that goes over what API's are and showcases Google's YouTube API and New York Time's API.
+
+Last YT Video - Takes the user to a seperate website that has my latest video for this class enbedded.
+
 ## What languages are used for this site
 -HTML
 
@@ -22,7 +37,7 @@ YouTube.html which is used for getting the most current video up on my YouTube c
 
 -CSS
 
-## Application Enviornment Details
+## Application Environment Details
 
 [grid="rows",format="csv"]
 |==========================
