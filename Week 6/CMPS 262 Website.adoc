@@ -46,7 +46,7 @@ Main Site,Type,Enviornment,URL,Status,Current Version
 |==========================
 
 ## GitHub Branching Strategy
-image::Git_Branch_Strategy.jpg[alt=test,width=700px,height=500px][orientation=portrait]
+image::Git_Branch_Strategy_Mine.jpg[alt=test,width=700px,height=500px][orientation=portrait]
 
 ## Version Differences
 -V0.1 - Really basic template with just a image and text.  No CSS or JS/JQuery.
