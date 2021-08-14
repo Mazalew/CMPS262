@@ -46,7 +46,7 @@ Main Site,Type,Enviornment,URL,Status,Current Version
 |==========================
 
 ## GitHub Branching Strategy
-image::Git_Branch_Strategy.jpg[alt=test,width=700px,height=500px][orientation=portrait]
+image::Git_Branch_Strategy_Mine.jpg[alt=test,width=700px,height=500px][orientation=portrait]
 
 ## Version Differences
 -V0.1 - Really basic template with just a image and text.  No CSS or JS/JQuery.
@@ -59,4 +59,4 @@ image::Git_Branch_Strategy.jpg[alt=test,width=700px,height=500px][orientation=po
 
 -V0.6 - Added a API page that contains 3 subpages: API info, NYTimes, and YouTube.  These pages show case how API's can be used as well as some information about them.  This was also the addition of the previously deleted YouTube page and is now functional.  It is not very pretty yet, but will be soon.
 
--V0.75 - Fixed the jquery/JS code so it is much more condensed and easier to read and follow for the main scirpt.  Edited the YouTube page so it is also not as basic.
+-V0.8 - Fixed the jquery/JS code so it is much more condensed and easier to read and follow for the main scirpt.  Edited the YouTube page so it is also not as basic.
