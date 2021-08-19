@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Jquery API </title>
+<body>
+  <h1>My PPU API</h1>
+  <p>Search for anything on YouTube</p>
+  <input type="text" value="Search" id="search">
+  <input type="button" value="Search" id="searchButton">
+  <div class="buttonOptions">
+    <input type="button" class="tokenClass" value="Previous">
+    <input type="button" class="tokenClass" value="Next">
+  </div>
+  <div id="output"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    var pageToken = {};
+    $(document).ready(function() {
+      $('#searchButton').click(function() {
+        searchYouTube();
+      })
+      $('.tokenClass').click(function() {
+        pageToken.current = $(this).val()=='Next' ? pageToken.nextPage : pageToken.prevPage;
+        searchYouTube();
+      })
+    })
+
+    function searchYouTube () {
+      $.ajax({
+        url:'https://www.googleapis.com/youtube/v3/search',
+        dataType:'json',
+        type:'GET',
+        data: {
+          key:'AIzaSyDMtUUEBFyNFMJS-DpV7PDVvde-FAnwIB8',
+          q: $('#search').val(),
+          part: 'snippet',
+          maxResults: 25,
+          pageToken: pageToken.current
+        }
+      }).done(function(data){
+
+        pageToken.nextPage = data.nextPageToken;
+        pageToken.prevPage = data.prevPageToken;
+        console.log(pageToken);
+
+        var html="";
+        $.each(data['items'], function(index,value){
+          html += '<div><div class="title">'+value.snippet.title+'</div>';
+          html += '<div><div class="url"><a href="https://www.youtube.com/watch?v='+value.id.videoId+'" target=_blank>"'+value.id.videoId+'</a></div>';
+          html += '<div><img class="thumbnail" src="'+value.snippet.thumbnails.medium.url+'"></div>';
+          html += '</div>';
+        })
+        $('#output').html(html);
+      })
+    }
+  </script>
+</body>
+</html>
