@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  var player = document.getElementById("audio_player");
+
   $("#Home").click(function () {
     show_page('#Homepage');
   });
@@ -114,6 +116,20 @@ $(document).ready(function() {
 
   $("#Stock").click(function () {
     presentation('Stocks.jpg', changeFormatPortfolio("default"), 'This was one of my first large scale programs and... oh boy... it took a long time to make and a lot of frustration was had making it.  Overall I am happy the way it came out with the little knowledge I had.  Sadly it does not work anymore since the way it was formatted relied on coordinates and the locations changed.  Still a great work to look at.  I will say there are a lot of images for this project and I will try to describe everything as this is over 2-3 years old now.');
+  });
+
+//For the Audio songs page buttons
+  $("#Song_Next").click(function() {
+    console.log("Work 1");
+    Next_Song("Hungry Like The Wolf");
+  })
+
+  $("#Song_Play").click(function() {
+    player.play();
+  });
+
+  $("#Song_Pause").click(function() {
+    player.pause();
   });
 
 function next(current) {
@@ -259,6 +275,15 @@ function previous(current) {
   }
 }
 
+function Next_Song (current) {
+  switch (current) {
+    case "Hungry Like The Wolf":
+      console.log("Work 2");
+      audio_to("");
+      break;
+  }
+}
+
 function fade (img) {
   $("#img").fadeOut(400, function () {
     $('#img').attr('src', img);
@@ -277,6 +302,14 @@ function presentation (img, format, text) {
   fade('img/' + img);
   format;
   $('p#Project_Desc').text(text);
+}
+
+function audio_to (song) {
+  player.pause();
+  player.currentTime = 0;
+  $('#audio_player').attr('src', 'audio/Every Time I Look for You.mp3');
+  player.load();
+  player.play();
 }
 
 function show_page (page) {
