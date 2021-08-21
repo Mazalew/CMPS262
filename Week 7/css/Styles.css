@@ -390,7 +390,11 @@ img.Stock {
 }
 
 #Song_Buttons_div {
-  padding-bottom: 383px;
+  padding-bottom: 335px;
+}
+
+#Song_Selector {
+  padding-bottom: 230px;
 }
 
 button.Song_Buttons {

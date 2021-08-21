@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   var player = document.getElementById("audio_player");
+  player.volume = 0.3;
 
   $("#Home").click(function () {
     show_page('#Homepage');
@@ -134,6 +135,24 @@ $(document).ready(function() {
   $("#Song_Pause").click(function() {
     player.pause();
   });
+
+  $("#Song_Selector_Button").click(function() {
+    if ($("#Song_Selector_Button").text().includes("Open")) {
+      $("#Song_Selector_Button").text("Close Song Selector");
+      $("#Song_Buttons_div").css("padding-bottom", "0px");
+      $("#Song_Selector").show();
+    }
+    else {
+      $("#Song_Selector_Button").text("Open Song Selector");
+      $("#Song_Buttons_div").css("padding-bottom", "335px");
+      $("#Song_Selector").hide();
+    }
+  });
+
+  $("#Song_Confirm_Button").click(function() {
+    audio_to($("#Song_Selection").val());
+    console.log("work");
+  })
 
 function next(current) {
 
@@ -294,6 +313,15 @@ function Next_Song (current) {
       audio_to("The Reckless and the Brave");
       break;
     case "The Reckless and the Brave":
+      audio_to("Superman");
+      break;
+    case "Superman":
+      audio_to("Fly Me To The Moon Cover");
+      break;
+    case "Fly Me To The Moon Cover":
+      audio_to("The Judge");
+      break;
+    case "The Judge":
       audio_to("Hungry Like The Wolf");
       break;
   }
@@ -302,7 +330,7 @@ function Next_Song (current) {
 function Prev_Song (current) {
   switch (current) {
     case "Hungry Like The Wolf":
-      audio_to("The Reckless and the Brave");
+      audio_to("The Judge");
       break;
     case "Every Time I Look for You":
       audio_to("Hungry Like The Wolf");
@@ -315,6 +343,15 @@ function Prev_Song (current) {
       break;
     case "The Reckless and the Brave":
       audio_to("One Day");
+      break;
+    case "Superman":
+      audio_to("The Reckless and the Brave");
+      break;
+    case "Fly Me To The Moon Cover":
+      audio_to("Superman");
+      break;
+    case "The Judge":
+      audio_to("Fly Me To The Moon Cover");
       break;
   }
 }
@@ -370,8 +407,24 @@ function audio_to (song) {
       $('#Song_Title').text("The Reckless and the Brave");
       $('#Song_Artist').text("All Time Low");
       break;
+    case ("Superman"):
+      $('#audio_player').attr('src', 'audio/Superman.mp3');
+      $('#Song_Title').text("Superman");
+      $('#Song_Artist').text("GoldFinger");
+      break;
+    case ("Fly Me To The Moon Cover"):
+        $('#audio_player').attr('src', 'audio/Fly Me To The Moon Cover.mp3');
+        $('#Song_Title').text("Fly Me To The Moon Cover");
+        $('#Song_Artist').text("TheDoo (Ft. Marcus Veltri & GBSN)");
+        break;
+    case ("The Judge"):
+        $('#audio_player').attr('src', 'audio/The Judge.mp3');
+        $('#Song_Title').text("The Judge");
+        $('#Song_Artist').text("Twenty-One Pilots");
+        break;
   }
   player.load(); //Preloads the song.
+  player.volume = 0.3;
   player.play(); //Plays the song.
 }
 
