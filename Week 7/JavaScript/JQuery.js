@@ -120,8 +120,7 @@ $(document).ready(function() {
 
 //For the Audio songs page buttons
   $("#Song_Next").click(function() {
-    console.log("Work 1");
-    Next_Song("Hungry Like The Wolf");
+    Next_Song($('#Song_Title').text());
   })
 
   $("#Song_Play").click(function() {
@@ -275,11 +274,24 @@ function previous(current) {
   }
 }
 
+//Used for the song page to get the next song.  Only decides which song is next.
 function Next_Song (current) {
   switch (current) {
-    case "Hungry Like The Wolf":
-      console.log("Work 2");
-      audio_to("");
+    case "Hungry Like the Wolf":
+      console.log("work3")
+      audio_to("Every Time I Look for You");
+      break;
+    case "Every Time I Look for You":
+      audio_to("Leaving On a Jet Plane");
+      break;
+    case "Leaving On a Jet Plane":
+      audio_to("One Day");
+      break;
+    case "One Day":
+      audio_to("The Reckless and the Brave");
+      break;
+    case "The Reckless and the Brave":
+      audio_to("Hungry Like The Wolf");
       break;
   }
 }
@@ -304,12 +316,40 @@ function presentation (img, format, text) {
   $('p#Project_Desc').text(text);
 }
 
+//All the back end to change the song.
 function audio_to (song) {
-  player.pause();
-  player.currentTime = 0;
-  $('#audio_player').attr('src', 'audio/Every Time I Look for You.mp3');
-  player.load();
-  player.play();
+  player.pause(); //Pauses current song
+  player.currentTime = 0; //Sets the time to 0:00
+  console.log("work4")
+  switch(song) { //Figues out which song needs to play.
+    case ("Hungry Like The Wolf"):
+      $('#audio_player').attr('src', 'audio/Hungry Like The Wolf.mp3'); //Changes the song
+      $('#Song_Title').text("Hungry Like the Wolf"); //Changes the Title
+      $('#Song_Artist').text("Duran Duran"); //Changes the Author
+      break;
+    case ("Every Time I Look for You"):
+      $('#audio_player').attr('src', 'audio/Every Time I Look for You.mp3');
+      $('#Song_Title').text("Every Time I Look for You");
+      $('#Song_Artist').text("Blink-182");
+      break;
+    case ("Leaving On a Jet Plane"):
+      $('#audio_player').attr('src', 'audio/Leaving On a Jet Plane.mp3');
+      $('#Song_Title').text("Leaving On a Jet Plane");
+      $('#Song_Artist').text("John Denver");
+      break;
+    case ("One Day"):
+      $('#audio_player').attr('src', 'audio/One Day.mp3');
+      $('#Song_Title').text("One Day");
+      $('#Song_Artist').text("Matisyahu");
+      break;
+    case ("The Reckless and the Brave"):
+      $('#audio_player').attr('src', 'audio/The Reckless and the Brave.mp3');
+      $('#Song_Title').text("The Reckless and the Brave");
+      $('#Song_Artist').text("All Time Low");
+      break;
+  }
+  player.load(); //Preloads the song.
+  player.play(); //Plays the song.
 }
 
 function show_page (page) {

@@ -220,16 +220,25 @@
           <img id="YT_Video_Thumbnail"></img>
         </div>
       </div>
-      <div id="Music_Audio_Page">
-        <h1 id="MA_Title" class="center">Music</h1>
-        <p id="MA_Discrip" class="center">This page is to test out how audio works for websites</p>
-        <button id="Song_Next">Next Song</button>
-        <button id="Song_Play">Play</button>
-        <button id="Song_Pause">Pause</button>
-        <button id="Song_Previous">Previous Song</button></br></br></br>
-        <audio id ="audio_player" controls>
+      <div id="Music_Audio_Page" class="center">
+        <div id="Song_Top">
+          <h1 id="MA_Title">Music</h1>
+          <p id="MA_Discrip">This page is to test out how audio works for websites</p>
+          </br></br></br>
+          <span id="Current_Song_Text">Current Song:</span>
+          <span id="Song_Title">Hungry Like the Wolf</span>
+          <p id="Song_Artist">Duran Duran</p></br>
+          <audio id ="audio_player" controls>
           <source id="audio_src" src="audio/Hungry Like The Wolf.mp3" type="audio/mpeg">
             Your browser does not support MP3 format.  Please switch to a different browser to view.
+          </audio></br>
+        </div>
+        <div id="Song_Buttons" class="center">
+          <button id="Song_Next">Next Song</button>
+          <button id="Song_Play">Play</button>
+          <button id="Song_Pause">Pause</button>
+          <button id="Song_Previous">Previous Song</button>
+        </div>
       </div>
     </div>
   </body>
