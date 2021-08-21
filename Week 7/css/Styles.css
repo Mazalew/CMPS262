@@ -372,3 +372,32 @@ img.Stock {
 #MA_Discrip {
   font-size: 2em;
 }
+
+#Current_Song_Text {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#Song_Title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #0a4a1e;
+}
+
+#Song_Artist {
+  font-size: 1.65em;
+  font-weight: bold;
+}
+
+#Song_Buttons_div {
+  padding-bottom: 383px;
+}
+
+button.Song_Buttons {
+  background-color: #8fd9c1;
+}
+
+button.Song_Buttons:hover {
+  color: #8fb6ff;
+  background-color: #3b574e
+}

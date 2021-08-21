@@ -123,6 +123,10 @@ $(document).ready(function() {
     Next_Song($('#Song_Title').text());
   })
 
+  $("#Song_Previous").click(function() {
+    Prev_Song($('#Song_Title').text());
+  })
+
   $("#Song_Play").click(function() {
     player.play();
   });
@@ -277,8 +281,7 @@ function previous(current) {
 //Used for the song page to get the next song.  Only decides which song is next.
 function Next_Song (current) {
   switch (current) {
-    case "Hungry Like the Wolf":
-      console.log("work3")
+    case "Hungry Like The Wolf":
       audio_to("Every Time I Look for You");
       break;
     case "Every Time I Look for You":
@@ -292,6 +295,26 @@ function Next_Song (current) {
       break;
     case "The Reckless and the Brave":
       audio_to("Hungry Like The Wolf");
+      break;
+  }
+}
+
+function Prev_Song (current) {
+  switch (current) {
+    case "Hungry Like The Wolf":
+      audio_to("The Reckless and the Brave");
+      break;
+    case "Every Time I Look for You":
+      audio_to("Hungry Like The Wolf");
+      break;
+    case "Leaving On a Jet Plane":
+      audio_to("Every Time I Look for You");
+      break;
+    case "One Day":
+      audio_to("Leaving On a Jet Plane");
+      break;
+    case "The Reckless and the Brave":
+      audio_to("One Day");
       break;
   }
 }
@@ -324,7 +347,7 @@ function audio_to (song) {
   switch(song) { //Figues out which song needs to play.
     case ("Hungry Like The Wolf"):
       $('#audio_player').attr('src', 'audio/Hungry Like The Wolf.mp3'); //Changes the song
-      $('#Song_Title').text("Hungry Like the Wolf"); //Changes the Title
+      $('#Song_Title').text("Hungry Like The Wolf"); //Changes the Title
       $('#Song_Artist').text("Duran Duran"); //Changes the Author
       break;
     case ("Every Time I Look for You"):
